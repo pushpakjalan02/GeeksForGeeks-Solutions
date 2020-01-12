@@ -33,7 +33,7 @@ def search_pivot(list_of_nos, start, end):
             elif(list_of_nos[mid] > list_of_nos[end]):                                          # search right
                 return search_pivot(list_of_nos, mid+1, end)
             else:
-                return 0
+                return start
 
 
 def main():
