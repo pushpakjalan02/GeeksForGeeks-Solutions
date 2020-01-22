@@ -3,7 +3,21 @@
 # URL: https://www.geeksforgeeks.org/check-if-it-is-possible-to-sort-the-array-after-rotating-it/
 
 def find_answer(list_of_nos, nos):
-    
+    i = 0
+    while(i < nos - 1):
+        if(list_of_nos[i] > list_of_nos[i+1]):
+            break
+        i++
+    if(i == nos - 1):
+        return "Already Sorted... Hence Possible"
+    while(i < nos - 1):
+        if(list_of_nos[i] < list_of_nos[i+1]):
+            break
+        i++
+    if(i == nos - 1):
+        return
+    else:
+        return
     return
 
 def main():
