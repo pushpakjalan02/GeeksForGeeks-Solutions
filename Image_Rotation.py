@@ -4,10 +4,18 @@
 
 import sys
 
-def rotate(matrix, rows, columns):
-    dest_matrix = 
-    for 
-    return
+def rotate(src_matrix, rows, columns):
+    dest_matrix = [[0 for i in range(0, rows)] for j in range(0, columns)]
+    for i in range(0, rows):
+        for j in range(0, columns):
+            dest_matrix[j][rows - i - 1] = src_matrix[i][j] 
+    return dest_matrix
+
+def print_matrix(matrix):
+    for i in range(0, len(matrix)):
+        for j in range(0, len(matrix[i])):
+            print(matrix[i][j], end = " ")
+        print()
 
 def main():
     rows = int(input("Enter No. of Rows: "))
@@ -22,6 +30,7 @@ def main():
             sys.exit(0)
         matrix.append(to_append)
     dest_matrix = rotate(matrix, rows, columns)
+    print_matrix(dest_matrix)
     return
 
 if __name__ == "__main__":
