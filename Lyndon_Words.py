@@ -14,14 +14,19 @@ def sort(list_of_characters):
     return
 
 def find_lyndon(list_of_characters, length):
-    
+
+    # Indice Array
+    w = []
+
+    while(1):
+        while(len(w) < length):
+            w.append(w[])
+
     return
 
 def main():
     length = int(input("Enter Length"))
     list_of_characters = list(input("Enter List of Characters").strip().split())
-    if(len(list_of_characters) < length):
-        sys.exit()
     sort(list_of_characters)
     find_lyndon(list_of_characters, length)
     return
