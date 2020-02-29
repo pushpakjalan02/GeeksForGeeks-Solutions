@@ -17,7 +17,7 @@ def find_lyndon(list_of_characters, length):
 
     # Indice Array
     w = []
-
+    
     while(1):
         while(len(w) < length):
             w.append(w[])
